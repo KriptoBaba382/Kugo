@@ -88,6 +88,7 @@ border-radius: 0;
     background-color: #ffffff;
     color: #000;
 }
-.content {
-    border-image: url(/img/Photo.svg);
+.photo-content {
+    position: absolute;
+    background: linear-gradient rgb(111, 115, 238), rgba(111, 115, 238, 0);
 }
