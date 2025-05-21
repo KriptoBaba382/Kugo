@@ -4,7 +4,7 @@
 }
 .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1110px;
     padding: 0 12px;
     margin: 0 auto;
 }
@@ -88,7 +88,59 @@ border-radius: 0;
     background-color: #ffffff;
     color: #000;
 }
+.content {
+    width: 1380px;
+    height: 445px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 39.5px;
+    overflow: hidden;
+    background: linear-gradient(to right,rgb(111, 115, 238), rgba(111, 115, 238, 0)) ;
+}
 .photo-content {
     position: absolute;
-    background: linear-gradient rgb(111, 115, 238), rgba(111, 115, 238, 0);
+    right: 0;
+    bottom: -30px;
+    z-index: -1;
+}
+.box-content {
+    padding-top: 56px;
+    color: #ffffff;
+}
+.mode {
+   opacity: 70%;
+}
+.subtitle {
+    margin-top: 7px;
+    margin-bottom: 28px;
+}
+.card-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 38px;
+}
+.card-text {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+.card-text-double {
+    display: flex;
+    align-items: center;
+}
+.button-card {
+    background-color: #A2A6ED;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.button-card.scooter {
+    background-color: #8D90F1;
+
+}
+.button-record {
+    background-color: #ffffff;
+    color: rgb(111, 115, 238);
+    width: 159px;
+    height: 53px;
 }
