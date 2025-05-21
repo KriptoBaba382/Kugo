@@ -94,6 +94,7 @@ border-radius: 0;
     position: relative;
     margin: 0 auto;
     margin-top: 39.5px;
+    margin-bottom: 72px;
     overflow: hidden;
     background: linear-gradient(to right,rgb(111, 115, 238), rgba(111, 115, 238, 0)) ;
 }
@@ -143,4 +144,20 @@ border-radius: 0;
     color: rgb(111, 115, 238);
     width: 159px;
     height: 53px;
+}
+.content-model {
+    width: 1380px;
+    height: 445px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 39.5px;
+    margin-bottom: 100px;
+   
+}
+.photo-scooter {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    z-index: -1;
+    border-radius: 10px;
 }
