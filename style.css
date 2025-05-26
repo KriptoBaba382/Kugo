@@ -114,11 +114,9 @@ button {
   margin-top: 39.5px;
   margin-bottom: 72px;
   overflow: hidden;
-  background: linear-gradient(
-    to right,
-    rgb(111, 115, 238),
-    rgba(111, 115, 238, 0)
-  );
+  background: linear-gradient(to right,
+      rgb(111, 115, 238),
+      rgba(111, 115, 238, 0));
 }
 
 .photo-content {
@@ -219,6 +217,7 @@ button {
 .photo-scooter {
   border-radius: 10px;
 }
+
 .content-rules {
   width: 1380px;
   height: 445px;
@@ -229,6 +228,94 @@ button {
   justify-content: space-between;
 }
 
+.title-rules {
+  font-size: 30px;
+  color: #282739;
+}
+
+.subtitle-rules {
+  color: #282739;
+}
+
+.rules {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
 .study {
   fill: #6f73ee;
+  margin-right: 10px;
+}
+.subtitle-cards {
+  padding-left: 24px;
+  font-size: 18px;
+  color: #282739;
+}
+.cards-scooter {
+  width: 255px;
+  height: 492px;
+  border: 1.5px solid #F0F1F5;
+}
+.characteristic-scooter {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 35px;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+.indicator {
+  margin-right: 10px;
+}
+.characteristic {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  color: #5D6C7B;
+}
+.price-scooter {
+  padding-left: 24px;
+}
+.button-radius {
+  display: flex;
+  justify-content: space-between;
+}
+.not-price {
+  text-decoration: line-through;
+  font-size: 12px;
+  color: #5D6C7B;  
+}
+
+.price {
+  font-size: 20px;
+  color: #282739;
+  font-weight: bold;
+}
+.purchase {
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #EAEBED;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 26px;
+
+}
+.basket {
+  fill: #6f73ee;
+}
+.like {
+  fill: #6f73ee;
+}
+
+.purchase.laut {
+  margin-right: 25px;
+}
+.button-recording {
+  margin-left: 26px;
+  margin-right: 25px;
+  font-size: 12px;
+  margin-top: 16px;
 }
