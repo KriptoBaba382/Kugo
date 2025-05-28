@@ -253,13 +253,26 @@ button {
   font-size: 18px;
   color: #282739;
 }
-
+.title-test-drive {
+  font-size: 35px;
+  color: #282739;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.test-drive-training {
+  display: flex;
+justify-content: center;
+}
 .cards-scooter {
   width: 255px;
   height: 492px;
   border: 1.5px solid #F0F1F5;
   position: relative;
   border-radius: 15px;
+  margin-right: 30px;
+  
 }
 
 .characteristic-scooter {
@@ -328,7 +341,7 @@ button {
 }
 
 .button-recording {
-  margin-left: 26px;
+  margin-left: 41px;
   margin-right: 25px;
   font-size: 12px;
   margin-top: 16px;
@@ -356,4 +369,16 @@ button {
   position: absolute;
   left: 10px;
   top: 10px;
+  font-size: 12px;
+} 
+.hit-button-two {
+  border-radius: 5px;
+  background-color: #75D14A;
+  color: #ffffff;
+  width: fit-content;
+  padding: 4px 9px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 12px;
 }
