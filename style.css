@@ -391,7 +391,7 @@ button {
   width: 1380px;
   height: 445px;
   background-color: #f4f7fb;
-  margin-left: 206px;
+  margin: 0 auto;
   margin-bottom: 100px;
 }
 .cta-image {
@@ -409,6 +409,7 @@ button {
   font-size: 35px;
   margin-bottom: 40px;
   color: #282739;
+  text-transform: uppercase;
 }
 .form-text {
   font-size: 16px;
@@ -464,6 +465,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 165px;
 }
 .input-wrapper {
   width: 410px;
@@ -473,11 +475,11 @@ input {
 .title-test-form {
   font-size: 18px;
   color: white;
-  padding-top: 24px;
-  padding-left: 165px;
+  text-transform: uppercase;
 }
 .input-wrapper input {
   background-color: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 .button-wraper {
   background-color: #fff;
