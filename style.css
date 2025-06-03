@@ -485,3 +485,52 @@ input {
   background-color: #fff;
   color: #6f73ee;
 }
+.footer-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 46px 165px;
+}
+.footer-item-title {
+  font-size: 19px;
+  font-weight: 500px;
+  margin-bottom: 17px;
+  color: #282739;
+}
+.footer-text {
+  font-size: 14px;
+  color: #5D6C7B;
+  margin-bottom: 10px;
+}
+.footer-menu {
+  columns: 2;
+  min-width: 254px;
+  
+}
+.footer-nenu-contacts {
+  columns: 2;
+  min-width: 325px;
+}
+.footer-text.subtitle {
+  color: #282739;
+  font-size: 12px;
+}
+.footer-text.tel {
+  font-size: 16px;
+  font-weight: 500px;
+  color: #282739;
+}
+.footer-subtitle-call {
+  font-size: 12px;
+  font-weight: 500px;
+  color:#6f73ee;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 165px;
+}
+.footer-lowest {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 165px;
+}
