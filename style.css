@@ -565,6 +565,9 @@ input {
 .container-wrapper {
   padding: 0 165px;
 }
+.hiden {
+  display: none;
+}
 .modal-window {
   width: 790px;
   height: 590px;
