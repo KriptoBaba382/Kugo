@@ -53,11 +53,13 @@ body {
 .header-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
   display: flex;
   align-items: center;
+  margin-right: 35px;
 }
 
 .header-button {
@@ -65,6 +67,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 13px;
+  margin-right: 20px;
 }
 
 .mobile-menu-toggle {
@@ -74,7 +77,13 @@ body {
   align-items: flex-end;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
 }
-
+.scales {
+  margin-left: 47px;
+  margin-right: 20px;
+}
+.like-svg {
+  margin-right: 20px;
+}
 .mobile-menu-line {
   height: 1px;
   background-color: #ffffff;
@@ -97,6 +106,7 @@ form {
 .search-wrapper {
   border: 1px solid rgb(111, 115, 238);
   border-radius: 5px;
+  display: flex;
 }
 
 input[type="search"] {
@@ -104,6 +114,9 @@ input[type="search"] {
   font-size: 16px;
   width: 598px;
   border: none;
+}
+input:focus {
+  outline: none;
 }
 
 button {
@@ -113,7 +126,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .search-button {
@@ -297,11 +310,11 @@ span {
 }
 .cards-scooter {
   width: 255px;
-  height: 492px;
   border: 1.5px solid #f0f1f5;
   position: relative;
   border-radius: 15px;
   margin-right: 30px;
+  padding-bottom: 20px;
 }
 
 .characteristic-scooter {
@@ -365,7 +378,7 @@ span {
 }
 
 .purchase.laut {
-  margin-right: 25px; 
+  margin-right: 25px;
 }
 
 .button-recording {
@@ -454,7 +467,7 @@ span {
 .forma-tel {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   gap: 20px;
 }
 .input-group {
@@ -478,6 +491,9 @@ input {
   min-width: 16px;
   margin-top: 23px;
   margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .notify-icon {
   stroke: #6f73ee;
@@ -504,6 +520,7 @@ input {
 .input-wrapper input {
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
+  border-radius: 5px;
 }
 .button-wraper {
   background-color: #fff;
@@ -570,6 +587,13 @@ input {
   margin-top: 36px;
   margin-bottom: 34px;
 }
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+.kugo-logo-top {
+  margin-right: 59px;
+}
 .footer-lowest {
   display: flex;
   justify-content: space-between;
@@ -577,6 +601,7 @@ input {
 }
 .footer-details {
   text-decoration: none;
+  margin-right: 44px;
 }
 .footer-policy {
   text-decoration: none;
@@ -647,4 +672,13 @@ h4 {
 }
 .notify-text.modal {
   font-size: 12px;
+}
+.footer-paymond {
+  display: flex;
+}
+.text-chat {
+  margin-left: 37.25px;
+}
+.chek-box.modal {
+  background: #f4f7fb;
 }

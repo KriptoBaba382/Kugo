@@ -12,6 +12,31 @@ function closeModal () {
     modalOpen.classList.add ('hiden')
 }
 modalClose.addEventListener ('click', closeModal)
-for (let i = 0; i < 6; i++) {    
+for (let i = 0; i < 4; i++) {    
     modalButton2[i].addEventListener('click', openModal)
 }
+const chekBox = document.querySelector (".chek-box")
+const iconNotify = document.querySelector (".notify-icon")
+function onChekBoxClick (){
+    if (iconNotify.classList.contains('hiden'))
+    {
+     iconNotify.classList.remove ('hiden')
+    }
+    else {
+        iconNotify.classList.add ('hiden')
+    }
+}
+chekBox.addEventListener('click', onChekBoxClick)
+
+const chekBoxTwo = document.querySelector ('.chek-box.modal')
+const iconNotifyTwo = document.querySelector ('.notify-icon.modal')
+function onChekBoxClickTwo () {
+     if (iconNotifyTwo.classList.contains('hiden'))
+    {
+     iconNotifyTwo.classList.remove ('hiden')
+    }
+    else {
+        iconNotifyTwo.classList.add ('hiden')
+    }
+}
+chekBoxTwo.addEventListener('click', onChekBoxClickTwo)

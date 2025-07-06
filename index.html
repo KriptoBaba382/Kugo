@@ -51,20 +51,18 @@
                     </a>
                     <span>Каталог</span>
                 </button>
-                <form>
                     <div class="search-wrapper">
                         <input type="search" name="query" placeholder="Искать самокат KUGO" />
                         <button class="search-button" type="submit">
                             <img src="img/Лупа.svg" alt="Поиск" />
                         </button>
                     </div>
-                </form>
-                <img src="/img/Весы.svg" alt="Весы" />
-                <img src="/img/like.svg" alt="" />
-                <button class="shopping-button">
+                <img class="scales" src="/img/Весы.svg" alt="Весы" />
+                <img class="like-svg"src="/img/like.svg" alt="" />
+                <div class="shopping-button">
                     <img src="/img/shopping-cart.svg" alt="Корзина" />
                     <span class="shopping"> Корзина </span>
-                </button>
+                </div>
             </div>
         </div>
     </header>
@@ -429,7 +427,7 @@
             </div>
             <div class="form-footer">
                 <div class="chek-box">
-                    <svg class="notify-icon" width="11" height="9">
+                    <svg class="notify-icon hiden" width="11" height="9">
                         <use href=img/icons.svg#schield></use>
                     </svg>
                 </div>
@@ -495,9 +493,7 @@
     </div>
     <div class="footer-top">
         <div class="footer-logo">
-            <img src="img/Kugoo.svg" alt="Logo">
-        </div>
-        <div class="footer-logo-store">
+            <img class="kugo-logo-top" src="img/Kugoo.svg" alt="Logo">
             <img src="img/Google.svg" alt="Google">
             <img src="img/Apple.svg" alt="Apple">
         </div>
@@ -511,8 +507,10 @@
         <div class="seporator"></div>
     </div>
     <div class="footer-lowest">
+        <div class="footer-details-policy">
         <a href="#" class="footer-details">Реквизиты</a>
         <a href="#" class="footer-policy">Политика конфиденциальности</a>
+        </div>
         <div class="footer-paymond">
             <svg class="Google-pay" width="35" height="24">
                 <use href=img/icons.svg#Google-pay></use>
@@ -535,8 +533,6 @@
             <svg class="Qiwi-pay" width="35" height="24">
                 <use href=img/icons.svg#Qiwi></use>
             </svg>
-        </div>
-        <div class="footer-chat">
             <div class="text-chat">Online чат:
                 <svg class="header-icon Viber" width="12" height="12">
                     <use href="img/icons.svg#viber 1"></use>
@@ -570,8 +566,8 @@
                 <button class="button form modal">Оформить предзаказ</button>
 
                 <div class="modal-form">
-                    <div class="chek-box">
-                        <svg class="notify-icon" width="11" height="9">
+                    <div class="chek-box modal">
+                        <svg class="notify-icon modal hiden" width="11" height="9">
                             <use href=img/icons.svg#schield></use>
                         </svg>
                     </div>
