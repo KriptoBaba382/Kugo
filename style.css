@@ -40,6 +40,7 @@ body {
   margin-right: 30px;
   font-family: "Jost";
   color: #5d6c7b;
+  text-decoration: none;
 }
 
 .seporator {
@@ -122,8 +123,11 @@ button {
 .shopping-button {
   background-color: #ffffff;
   color: #000;
+  display: flex;
 }
-
+.shopping {
+  margin-left: 10px;
+}
 .content {
   width: 1380px;
   height: 445px;
@@ -349,7 +353,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 26px;
+  margin-left: 18px;
 }
 
 .basket {
@@ -361,7 +365,7 @@ span {
 }
 
 .purchase.laut {
-  margin-right: 25px;
+  margin-right: 25px; 
 }
 
 .button-recording {
@@ -522,14 +526,27 @@ input {
   font-size: 14px;
   color: #5d6c7b;
   margin-bottom: 10px;
+  display: flex;
+  font-display: column;
+  text-decoration: none;
 }
 .footer-menu {
   columns: 2;
   min-width: 254px;
 }
 .footer-nenu-contacts {
-  columns: 2;
+  display: flex;
+  flex-direction: row;
   min-width: 325px;
+}
+.footer-call {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+.footer-service {
+  display: flex;
+  flex-direction: column;
 }
 .footer-text.subtitle {
   color: #282739;
@@ -544,6 +561,7 @@ input {
   font-size: 12px;
   font-weight: 500px;
   color: #6f73ee;
+  text-decoration: none;
 }
 .footer-top {
   display: flex;
@@ -556,6 +574,12 @@ input {
   display: flex;
   justify-content: space-between;
   padding: 40px 165px;
+}
+.footer-details {
+  text-decoration: none;
+}
+.footer-policy {
+  text-decoration: none;
 }
 .seporator {
   width: 100%;

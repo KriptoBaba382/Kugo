@@ -12,6 +12,6 @@ function closeModal () {
     modalOpen.classList.add ('hiden')
 }
 modalClose.addEventListener ('click', closeModal)
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 6; i++) {    
     modalButton2[i].addEventListener('click', openModal)
 }
