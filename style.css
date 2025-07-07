@@ -15,7 +15,9 @@ body {
   margin: 0;
   font-family: "Jost";
 }
-
+button:hover {
+  opacity: 0.9;
+}
 .container {
   width: 100%;
   max-width: 1110px;
