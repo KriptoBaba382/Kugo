@@ -684,3 +684,18 @@ h4 {
 .chek-box.modal {
   background: #f4f7fb;
 }
+@media screen and (max-width: 1380px) {
+  .content {
+    width: 90%;
+  }
+  .content-model {
+    width: 90%;
+  }
+  .content-rules {
+    width: 90%;
+    margin-top: 135px;
+  }
+  .box-rules {
+    margin-left: 95px;
+  }
+}
