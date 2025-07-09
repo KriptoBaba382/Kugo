@@ -220,18 +220,21 @@ span {
 
 .content-model {
   width: 1380px;
-  height: 445px;
   display: flex;
   margin: 0 auto;
   margin-top: 39.5px;
   margin-bottom: 100px;
-  justify-content: space-between;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.box-model {
+  margin-right: 60px;
 }
 
 .title-model {
-  font-size: 30px;
-  padding-left: 160px;
+  font-size: 25px;
   color: #282739;
+  text-transform:uppercase;
 }
 
 .drive {
@@ -239,7 +242,6 @@ span {
 }
 
 .test-drive {
-  padding-left: 160px;
   color: #282739;
 }
 
@@ -264,17 +266,22 @@ span {
 
 .content-rules {
   width: 1380px;
-  height: 445px;
   display: flex;
   margin: 0 auto;
   margin-top: 39.5px;
   margin-bottom: 100px;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 .title-rules {
   font-size: 30px;
   color: #282739;
+  text-transform:uppercase;
+}
+
+.box-rules {
+  margin-left: 60px;
 }
 
 .subtitle-rules {
@@ -697,5 +704,32 @@ h4 {
   }
   .box-rules {
     margin-left: 95px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header-box {
+    justify-content: flex-start;
+  }
+  .scales {
+    display: none;
+  }
+  .like-svg {
+    display: none;
+  }
+  .shopping-button {
+    display: none;
+  }
+  .title-model {
+    font-size: 16px;
+  }
+  .title-rules {
+    font-size: 16px;
+  }
+  .title-test-form {
+    font-size: 12px;
+    margin-right: 20px;
+  }  
+  .button-wraper {
+    margin-left: 30px;
   }
 }
