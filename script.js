@@ -40,3 +40,25 @@ function onChekBoxClickTwo () {
     }
 }
 chekBoxTwo.addEventListener('click', onChekBoxClickTwo)
+// const swiper = new Swiper('.swiper', {
+//     breakpoints: {
+//         // when window width is >= 320px
+//         375: {
+//           slidesPerView: 1,
+//         },
+//         576: {
+//           slidesPerView: 2,
+//         },
+//         // when window width is >= 480px
+//         768: {
+//           slidesPerView: 3,
+//         },
+//         // when window width is >= 640px
+//         1024: {
+//           slidesPerView: 4,
+//         },
+//         1200: {
+//             slidesPerView: 1,
+//         }
+//       }
+//   });
