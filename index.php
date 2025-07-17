@@ -412,6 +412,7 @@
         </div>
     </div>
     </div>
+    <form action="handler.php" method="POST">
     <div class="bg-grey">
         <picture class="cta-image">
             <img src="img/girl.svg" alt="Women" />
@@ -424,7 +425,7 @@
                 Оставьте заявку, и менеджер подберет нужный самокат
             </div>
             <div class="forma-tel">
-                <div class="input-group"><input type="text" placeholder="+7(___)___-__-__"></div>
+                <div class="input-group"><input id="user-phone" type="tel" name="userphone" class="input phone-mask"" placeholder="+7(___)___-__-__"></div>
                 <button class="button form">Оставить заявку на тест-драйв</button>
             </div>
             <div class="form-footer">
@@ -440,6 +441,7 @@
             </div>
         </div>
     </div>
+   </form>
     <div class="form-wrapper">
         <div class="title-test-form">Оставьте свою почту и станьте первым,<br> кто получит скидку на новые самокаты
         </div>
@@ -549,6 +551,7 @@
         </div>
     </div>
     <div class="hiden modal-bg">
+        <form action="handler.php" method="POST">
         <div class="modal-window">
             <svg class="modal-close" width="29" height="29">
                 <use href="img/icons.svg#close"></use>
@@ -563,7 +566,7 @@
                     <div class="hint-contact">
                         Как с вами удобнее связаться?
                     </div>
-                    <div class="input-group"><input type="text" placeholder="+7(___)___-__-__"></div>
+                    <div class="input-group"><input id="user-phone" type="tel" name="userphone" class="input phone-mask" placeholder="+7(___)___-__-__"></div>
                 </div>
                 <button class="button form modal">Оформить предзаказ</button>
 
@@ -583,7 +586,20 @@
                 <img src="img/modal-model.svg" alt="Model Scooter">
             </div>
         </div>
+        </form>
     </div>
+ <div class="modal">
+    <div class="modal-dialog">
+        <h2 class="modal-title">Спасибо за заявку!</h2>
+        <img src="img/thanks_illu.svg" alt="Картинка благодарности">
+        <a href="#" class="modal-close"> <svg class="modal-close" width="29" height="29">
+                <use href="img/icons.svg#close"></use>
+            </svg></a>
+        <p class="modal-text">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+            <button class="button form modal">Вернуться на главную</button>
+        
+    </div>
+ </div>
     <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
