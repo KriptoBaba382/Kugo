@@ -154,6 +154,7 @@ function onSuccess(event) {
   closeModal()
   event.preventDefault()
   const thisForm = event.target; // наша форма 
+  console.log(event)
   const formData = new FormData(thisForm); // данные из нашуй формы 
   const ajaxSend = (formData) => {
     fetch(thisForm.getAttribute("action"), {
@@ -181,4 +182,7 @@ function onSuccess(event) {
   };  
   ajaxSend(formData);
 }; 
-modalButton4.addEventListener ('click', onSuccess)
+// modalButton4.addEventListener ('click', onSuccess)
+
+
+document.querySelector('#order-form').addEventListener('submit', onSuccess)

@@ -551,7 +551,7 @@
         </div>
     </div>
     <div class="hiden modal-bg">
-        <form action="handler.php" method="POST">
+        <form id="order-form" action="handler.php" method="POST">
         <div class="modal-window">
             <svg class="modal-close" width="29" height="29">
                 <use href="img/icons.svg#close"></use>
@@ -568,7 +568,7 @@
                     </div>
                     <div class="input-group"><input id="user-phone" type="tel" name="userphone" class="input phone-mask" placeholder="+7(___)___-__-__"></div>
                 </div>
-                <button class="button form modal">Оформить предзаказ</button>
+                <button class="button form modal" type="submit">Оформить предзаказ</button>
 
                 <div class="modal-form">
                     <div class="chek-box modal">
