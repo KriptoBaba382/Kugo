@@ -108,7 +108,7 @@ form {
 }
 
 .search-wrapper {
-  border: 1px solid rgb(111, 115, 238);
+  border: 2px solid rgb(111, 115, 238);
   border-radius: 5px;
   display: flex;
 }
@@ -694,15 +694,16 @@ h4 {
   background: #f4f7fb;
 }
 .modal-dialog {
-  width: 790px;
-  height: 590px;
+  width: 460px;
+  height: 698px;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
   padding: 40px 40px;
   position: relative;
+  flex-direction: column;
 }
-.modal {
+.modal-dialog-bg {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;

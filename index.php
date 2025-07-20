@@ -588,7 +588,7 @@
         </div>
         </form>
     </div>
- <div class="modal">
+ <div class="hiden modal-dialog-bg">
     <div class="modal-dialog">
         <h2 class="modal-title">Спасибо за заявку!</h2>
         <img src="img/thanks_illu.svg" alt="Картинка благодарности">
@@ -596,7 +596,7 @@
                 <use href="img/icons.svg#close"></use>
             </svg></a>
         <p class="modal-text">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-            <button class="button form modal">Вернуться на главную</button>
+            <button class="button form">Вернуться на главную</button>
         
     </div>
  </div>

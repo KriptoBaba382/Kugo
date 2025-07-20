@@ -80,7 +80,7 @@ const prefixNumber = (str) => {
   /* в других случаях просто 7 (  */
   return "7 (";
 };
-; /* профикс в любом раскладе будет +7 () */
+ ; /* профикс в любом раскладе будет +7 () */
 
 // ======================================
 /* Ловим события ввода в любом поле */
@@ -136,3 +136,49 @@ document.addEventListener("input", (e) => {
   }
 });
 // ======================================
+const modalButton4 = document.querySelector ('.button.form.modal')
+const modalDialog = document.querySelector ('.modal-dialog-bg')
+modalButton4.addEventListener ('click', () => {
+  modalDialog.classList.remove ('hiden')
+})
+
+const modalButton5 = modalDialog.querySelector ('.button.form')
+const dialogClose = modalDialog.querySelector ('.modal-close')
+modalButton5.addEventListener ('click', () => {
+modalDialog.classList.add('hiden')
+})
+dialogClose.addEventListener ('click', () => {
+  modalDialog.classList.add('hiden')
+})
+function onSuccess(event) {
+  closeModal()
+  event.preventDefault()
+  const thisForm = event.target; // наша форма 
+  const formData = new FormData(thisForm); // данные из нашуй формы 
+  const ajaxSend = (formData) => {
+    fetch(thisForm.getAttribute("action"), {
+      method: thisForm.getAttribute("method"),
+      body: formData,
+    }).then((response) => {
+      if (response.ok) {
+        thisForm.reset();
+        currentModal.classList.remove("is-open");
+        alertModal.classList.add("is-open");
+        currentModal = alertModal;
+        modalDialog = currentModal.querySelector(".modal-dialog");
+      /* отслеживаем клик по окну и пустым областям */
+      currentModal.addEventListener("click", event => {
+        /* если клик в пустую область (не деалог) */
+        if (!event.composedPath().includes(modalDialog)) {
+          /* закрываем окно */
+          currentModal.classList.remove("is-open");
+        }
+      });
+      } else {
+        alert("Ошибка. Текст ошибки: ".response.statusText);
+      }
+    });
+  };  
+  ajaxSend(formData);
+}; 
+modalButton4.addEventListener ('click', onSuccess)
