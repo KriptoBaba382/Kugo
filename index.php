@@ -29,13 +29,43 @@
                              #telegram"></use>
                         </svg>
                     </div>
-                </div>
+                </div>        
                 <div class="header-phone">
                     <a class="header-phone-link href=tel:+7(800)505-54-61">+7(800)505-54-61</a>
                 </div>
             </div>
         </div>
         <div class="seporator"></div>
+    </div>
+    <div class="upstairs">
+        <div class="containers">
+            <div class="upstairs-wrapper">
+                <div class="button-logo">
+    <button class="header-button">
+                    <a href="#" class="mobile-menu-toggle">
+                        <div class="mobile-menu-line"></div>
+                        <div class="mobile-menu-line"></div>
+                        <div class="mobile-menu-line short"></div>
+                    </a>
+                </button>
+    <div class="header-logo">   
+                    <img src="/img/Kugoo.svg" alt="Logo" />
+                </div>
+                </div>
+                <div class="skales-like-shopping">
+                <img class="scales" src="/img/Весы.svg" alt="Весы" />
+                <img class="like-svg"src="/img/like.svg" alt="" />
+                <div class="shopping-button">
+                    <svg class="shopping-card" width="20" height="20">
+                        <use href="img/icons.svg#shopping-cart"></use>
+                    </svg>
+                    <span class="shopping"> Корзина </span>
+                </div>
+                <svg class="call-svg" width="22" height="22">
+                        <use href="img/icons.svg#call"></use>
+                    </svg>
+                </div>
+                </div>
     </div>
     <header class="header">
         <div class="container">
@@ -141,10 +171,10 @@
         <img class="photo-rules" src="img/Mask Group.svg" alt="Rules" />
         <div class="box-rules">
             <div class="title-rules">
-                <h3>
+                <h2>
                     Научим правильной <br />и безопасной езде в городе <br> вас или вашего
                     ребенка
-                </h3>
+                </h2>
             </div>
             <div class="study-rules">
                 <b class="subtitle-rules"> На обучении специалист расскажет:</b>
