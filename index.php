@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link type="image/x-icon" href="/img/favicon.ico" rel="shortcut icon">
+    <link type="image/x-icon" href="/img/favicon-16x16.png" rel="shortcut icon">
     <title>Kugoo</title>
 </head>
 
@@ -25,8 +25,7 @@
                             <use href="img/icons.svg#whatsapp"></use>
                         </svg>
                         <svg class="header-icon Telegramm" width="12" height="12">
-                            <use href="img/icons.svs
-                             #telegram"></use>
+                            <use href="img/icons.svg#telegram"></use>
                         </svg>
                     </div>
                 </div>        
@@ -98,6 +97,7 @@
     </header>
     <div class="content">
         <img class="photo-content" src="/img/Photo.svg" alt="Photo" />
+        <img class="photo-conent" src="/img/before.png" alt='Photo'/>
         <div class="container">
             <div class="box-content">
                 <div class="location">
@@ -587,11 +587,11 @@
                 <use href="img/icons.svg#close"></use>
             </svg>
             <div class="modal-window-group">
-                <h4>Запишитесь <br> на тест-драйв <br> электросамоката</h4>
+                <h4 class="title-window">Запишитесь <br> на тест-драйв <br> электросамоката</h4>
                 <div class="subtitle-model-selection">
                     и подберите модель для себя
                 </div>
-                <div class="text-manager">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</div>
+                <div class="text-manager">Менеджер свяжется с вами в течение 5 минут, чтобы <br>согласовать время.</div>
                 <div class="input-group-modal">
                     <div class="hint-contact">
                         Как с вами удобнее связаться?
@@ -613,7 +613,7 @@
                 </div>
             </div>
             <div class="modal-window-img">
-                <img src="img/modal-model.svg" alt="Model Scooter">
+                <img class="window-img" src="img/modal-model.svg" alt="Model Scooter">
             </div>
         </div>
         </form>

@@ -20,6 +20,10 @@ body {
 button:hover {
   opacity: 0.9;
 }
+.header-nav-link:hover{
+opacity: 0.9;
+color: #6F73EE;
+}
 .container {
   width: 100%;
   max-width: 1110px;
@@ -122,7 +126,7 @@ button:hover {
   margin-right: 20px;
 }
 .mobile-menu-line {
-  height: 1px;
+  height: 2px;
   background-color: #ffffff;
   width: 100%;
   transition: transform 0.2s;
@@ -131,6 +135,9 @@ button:hover {
 
 .mobile-menu-line.short {
   width: 50%;
+}
+.mobile-menu-line.short:hover {
+  width: 100%;
 }
 .title {
   font-family: "Jost SM";
@@ -186,11 +193,9 @@ button {
   margin-top: 39.5px;
   margin-bottom: 72px;
   overflow: hidden;
-  background: linear-gradient(
-    to right,
-    rgb(111, 115, 238),
-    rgba(111, 115, 238, 0)
-  );
+  background-image: linear-gradient(73deg,#6F73EE 17.37%,rgba(111,115,238,0) 67.02%);
+  border-radius: 20px;
+  
 }
 
 .photo-content {
@@ -198,6 +203,17 @@ button {
   right: 0;
   bottom: -30px;
   z-index: -1;
+}
+.photo-conent {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(/img/testdrive/before.png) no-repeat left top;
+    z-index: -1;
+  
 }
 
 .box-content {
@@ -842,6 +858,19 @@ h4 {
     flex-direction: column;
     align-items: center;
   }
+  .title-window {
+    font-size: 16px;
+  }
+  .modal-dialog {
+    width: 100%;
+    height: 100%   ;
+  }
+  .subtitle-model-selection {
+font-size: 15px;
+  }
+  .text-manager {
+    font-size: 13px;
+  }
   .box-model {
     margin-right: 0;
   }
@@ -875,6 +904,15 @@ h4 {
     flex-direction: column;
     align-items: center;
   }
+  .modal-window {
+    width: 100%;
+    height: 100%;
+  }
+
+  .window-img {
+    width: 286px;
+    height: 420px;
+  }
 .scales {
   display: none;
 }
@@ -897,7 +935,23 @@ h4 {
 .seporator {
   display: none;
 }
+.hint-contact {
+  margin-top: 30px;
 }
+}
+
+@media screen and (max-width: 650px) {
+  .modal-window-img {
+   display: none;
+  }
+  .modal-window-img {
+    margin-top: 50px;
+  }
+  .text-manager {
+    font-size: 10px;
+  }
+}
+
 @media screen and (max-width: 530px) {
   .title {
     font-size: 12px;
