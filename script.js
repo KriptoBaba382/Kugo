@@ -188,6 +188,20 @@ function onSuccess(event) {
 document.querySelector('#order-form').addEventListener('submit', onSuccess)
 
 const mailButton = document.querySelector(".button-wraper");
+
+
+function sendEmail() {
+  const formData = new FormData()
+
+  formData.append('usermail', document.querySelector('#user-mail').value)
+  return fetch('/handler.php', {
+    method: 'POST',
+    body: formData
+  })
+}
 mailButton.addEventListener ('click', () => {
-  modalDialog.classList.remove ('hiden')
+  sendEmail()
+    .then(() => {
+      modalDialog.classList.remove ('hiden')
+    })
 })
