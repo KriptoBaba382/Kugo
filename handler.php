@@ -1,5 +1,6 @@
 <?php 
 $userphone = htmlspecialchars($_POST["userphone"]);
+$usermail= htmlspecialchars($_POST["usermail"]);
 $token = "7810298388:AAFcExV9rCQD7YOYwUCI9TBGJBebq16ayAQ";
 $chat_id = "-4949899873";
 $sendToTelegram = fopen("https://core.telegram.org/bots{$token}/sendMessage?chat_id={$chat_id}&text={$userphone}", "r");
@@ -8,4 +9,5 @@ if ($sendToTelegram) {
 } else {
     echo "eror";
 }
-echo "Привет, " . $userphone ;
+echo "Привет, " . $userphone . "</br>";
+echo "Ваша электронная почта: <b>". $usermail . "</b>";

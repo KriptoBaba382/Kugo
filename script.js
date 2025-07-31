@@ -186,3 +186,8 @@ function onSuccess(event) {
 
 
 document.querySelector('#order-form').addEventListener('submit', onSuccess)
+
+const mailButton = document.querySelector(".button-wraper");
+mailButton.addEventListener ('click', () => {
+  modalDialog.classList.remove ('hiden')
+})
