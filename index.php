@@ -476,7 +476,7 @@
         <div class="title-test-form">Оставьте свою почту и станьте первым,<br> кто получит скидку на новые самокаты
         </div>
         <div class="input-wrapper">
-            <input type="text" placeholder="Введите ваш e-mail">
+            <input type="text" id="user-mail" type="MAIL" name="usermail" placeholder="Введите ваш e-mail">
         </div>
         <button class="button-wraper">
             Подписаться
