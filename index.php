@@ -458,6 +458,9 @@
                 <div class="input-group"><input id="user-phone" type="tel" name="userphone" class="input phone-mask"" placeholder="+7(___)___-__-__"></div>
                 <button class="button form">Оставить заявку на тест-драйв</button>
             </div>
+            <div class="form-note-eror">
+              Поле телефона обязательно для заполнения
+                </div>
             <div class="form-footer">
                 <div class="chek-box">
                     <svg class="notify-icon hiden" width="11" height="9">
@@ -477,6 +480,9 @@
         </div>
         <div class="input-wrapper">
             <input type="text" id="user-mail" type="MAIL" name="usermail" placeholder="Введите ваш e-mail">
+            <div class="form-note-eror white">
+              Поле email обязательно для заполнения
+                </div>
         </div>
         <button class="button-wraper">
             Подписаться
@@ -598,6 +604,9 @@
                     </div>
                     <div class="input-group"><input id="user-phone" type="tel" name="userphone" class="input phone-mask" placeholder="+7(___)___-__-__"></div>
                 </div>
+                <div class="form-note-eror">
+              Поле телефона обязательно для заполнения
+                </div>
                 <button class="button form modal" type="submit">Оформить предзаказ</button>
 
                 <div class="modal-form">
@@ -631,6 +640,7 @@
     </div>
  </div>
     <script src="swiper-bundle.min.js"></script>
+    <script src= 'just-validate.production.min.js'></script>c
     <script src="script.js"></script>
 </body>
 

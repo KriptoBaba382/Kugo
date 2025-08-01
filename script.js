@@ -190,4 +190,29 @@ document.querySelector('#order-form').addEventListener('submit', onSuccess)
 const mailButton = document.querySelector(".button-wraper");
 mailButton.addEventListener ('click', () => {
   modalDialog.classList.remove ('hiden')
-})
+})   
+ const forms = document.querySelectorAll('form');
+ formsforEach((form)=>{
+  const validation = new JustValidate(form, {
+erorFieldCssClass: "Is-invalid"
+
+  })
+  validation
+.addField("[name=userphone]", [
+  {
+    rule: "required",
+    errorMessage: "Укажите телефон"
+  },
+  {
+    rule: 'maxLength',
+    value: 50,
+    errorMessage: "Максимально 50 символов"
+  },
+])
+.addField("[name=usermail", [
+  {
+    rule: "required",
+    errorMessage: "Укажите email",
+  },
+])
+ })

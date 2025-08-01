@@ -537,6 +537,17 @@ span {
   border-radius: 5px;
   overflow: hidden;
 }
+.form-note-eror {
+    color: #db3a3a;
+    font-size: 11px;
+    line-height: 18px;
+  margin-top: 2px;
+  
+  }
+  .form-note-eror.white {
+    color: #fff;
+  }
+
 input {
   width: 100%;
   height: 100%;
@@ -752,6 +763,7 @@ h4 {
   position: relative;
   flex-direction: column;
 }
+
 .modal-dialog-bg {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
