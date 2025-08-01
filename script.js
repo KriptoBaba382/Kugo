@@ -188,31 +188,20 @@ function onSuccess(event) {
 document.querySelector('#order-form').addEventListener('submit', onSuccess)
 
 const mailButton = document.querySelector(".button-wraper");
-mailButton.addEventListener ('click', () => {
-  modalDialog.classList.remove ('hiden')
-})   
- const forms = document.querySelectorAll('form');
- formsforEach((form)=>{
-  const validation = new JustValidate(form, {
-erorFieldCssClass: "Is-invalid"
 
+
+function sendEmail() {
+  const formData = new FormData()
+
+  formData.append('usermail', document.querySelector('#user-mail').value)
+  return fetch('/handler.php', {
+    method: 'POST',
+    body: formData
   })
-  validation
-.addField("[name=userphone]", [
-  {
-    rule: "required",
-    errorMessage: "Укажите телефон"
-  },
-  {
-    rule: 'maxLength',
-    value: 50,
-    errorMessage: "Максимально 50 символов"
-  },
-])
-.addField("[name=usermail", [
-  {
-    rule: "required",
-    errorMessage: "Укажите email",
-  },
-])
- })
+}
+mailButton.addEventListener ('click', () => {
+  sendEmail()
+    .then(() => {
+      modalDialog.classList.remove ('hiden')
+    })
+})
