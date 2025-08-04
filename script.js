@@ -138,9 +138,9 @@ document.addEventListener("input", (e) => {
 // ======================================
 const modalButton4 = document.querySelector ('.button.form.modal')
 const modalDialog = document.querySelector ('.modal-dialog-bg')
-modalButton4.addEventListener ('click', () => {
-  modalDialog.classList.remove ('hiden')
-})
+// modalButton4.addEventListener ('click', () => {
+//   modalDialog.classList.remove ('hiden')
+// })
 
 const modalButton5 = modalDialog.querySelector ('.button.form')
 const dialogClose = modalDialog.querySelector ('.modal-close')
@@ -154,7 +154,6 @@ function onSuccess(event) {
   closeModal()
   event.preventDefault()
   const thisForm = event.target; // наша форма 
-  console.log(event)
   const formData = new FormData(thisForm); // данные из нашуй формы 
   const ajaxSend = (formData) => {
     fetch(thisForm.getAttribute("action"), {
@@ -185,7 +184,7 @@ function onSuccess(event) {
 // modalButton4.addEventListener ('click', onSuccess)
 
 
-document.querySelector('#order-form').addEventListener('submit', onSuccess)
+// document.querySelector('#order-form').addEventListener('submit', onSuccess)
 
 const mailButton = document.querySelector(".button-wraper");
 
@@ -205,3 +204,43 @@ mailButton.addEventListener ('click', () => {
       modalDialog.classList.remove ('hiden')
     })
 })
+
+
+
+const forms = document.querySelectorAll("form"); 
+forms.forEach((form) =>{
+const validation = new JustValidate(form,{
+errorFieldCssClass: "is-invalid",
+})
+validation
+  .addField('[name=userphone]', [
+    {
+      rule: 'required',
+      errorMessage: 'Укажите телефон',
+    },
+  ])
+  .onSuccess((event) => {    
+    document.querySelector('#formErrorText').style.display = 'none'
+    const thisForm = event.target;
+    sendFormToServer(thisForm)
+    .then((response) => {
+      if (response.ok) {
+        thisForm.reset ();
+        modalDialog.classList.remove ('hiden')
+      } else {
+        alert("Ошибка. Текст ошибки: ".response.statusText);
+      }
+    }) 
+  })
+  // .onError(() => {
+  //   document.querySelector('#formErrorText').style.display = 'block'
+  // })
+})
+
+function sendFormToServer(form) {
+  const formData = new FormData (form);
+  return fetch(form.getAttribute("action"), {
+        method: form.getAttribute("method"),
+        body: formData, 
+      })
+}

@@ -602,10 +602,10 @@
                     <div class="hint-contact">
                         Как с вами удобнее связаться?
                     </div>
-                    <div class="input-group"><input id="user-phone" type="tel" name="userphone" class="input phone-mask" placeholder="+7(___)___-__-__"></div>
+                    <div ><input id="user-phone" type="tel" name="userphone" class="input-group input phone-mask" placeholder="+7(___)___-__-__"></div>
                 </div>
-                <div class="form-note-eror">
-              Поле телефона обязательно для заполнения
+                <div id="formErrorText" class="form-note-eror" style="display:none">
+                    Поле телефона обязательно для заполнения
                 </div>
                 <button class="button form modal" type="submit">Оформить предзаказ</button>
 
@@ -640,7 +640,7 @@
     </div>
  </div>
     <script src="swiper-bundle.min.js"></script>
-    <script src= 'just-validate.production.min.js'></script>c
+    <script src= 'just-validate.production.min.js'></script>
     <script src="script.js"></script>
 </body>
 
