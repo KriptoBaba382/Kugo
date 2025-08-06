@@ -454,13 +454,14 @@
             <div class="form-text">
                 Оставьте заявку, и менеджер подберет нужный самокат
             </div>
-            <div class="forma-tel">
-                <div class="input-group"><input id="user-phone" type="tel" name="userphone" class="input phone-mask"" placeholder="+7(___)___-__-__"></div>
+            <div class="forma-tel form">
+            <input type="text" style="display:none" type="email" name="usermail" value="+7" placeholder="Введите ваш e-mail">
+                <div class="input-group"><input id="user-phone" type="tel" name="userphone" class="input phone-mask" placeholder="+7(___)___-__-__"></div>
                 <button class="button form">Оставить заявку на тест-драйв</button>
             </div>
-            <div class="form-note-eror">
+            <!-- <div class="form-note-eror">
               Поле телефона обязательно для заполнения
-                </div>
+                </div> -->
             <div class="form-footer">
                 <div class="chek-box">
                     <svg class="notify-icon hiden" width="11" height="9">
@@ -475,19 +476,21 @@
         </div>
     </div>
    </form>
-    <div class="form-wrapper">
+    <form class="form-wrapper" action="handler.php" method="POST">
         <div class="title-test-form">Оставьте свою почту и станьте первым,<br> кто получит скидку на новые самокаты
         </div>
         <div class="input-wrapper">
-            <input type="text" id="user-mail" type="MAIL" name="usermail" placeholder="Введите ваш e-mail">
-            <div class="form-note-eror white">
+        <input type="text" style="display:none" type="email" name="userphone" value="+7" placeholder="Введите ваш e-mail">
+            <input type="text" id="user-mail" type="email" name="usermail" placeholder="Введите ваш e-mail">
+            <!-- <div class="form-note-eror white">
               Поле email обязательно для заполнения
-                </div>
+                </div> -->
         </div>
-        <button class="button-wraper">
+        <button class="button-wraper" type="submit">
             Подписаться
         </button>
-    </div>
+        </div>
+    </form>
     <div class="footer-item">
         <div class="footer-catalog">
             <div class="footer-item-title">Каталог товаров</div>
@@ -602,11 +605,12 @@
                     <div class="hint-contact">
                         Как с вами удобнее связаться?
                     </div>
+                    <input type="text" style="display:none" type="email" name="usermail" value="+7" placeholder="Введите ваш e-mail">
                     <div ><input id="user-phone" type="tel" name="userphone" class="input-group input phone-mask" placeholder="+7(___)___-__-__"></div>
                 </div>
-                <div id="formErrorText" class="form-note-eror" style="display:none">
+                <!-- <div id="formErrorText" class="form-note-eror" style="display:none">
                     Поле телефона обязательно для заполнения
-                </div>
+                </div> -->
                 <button class="button form modal" type="submit">Оформить предзаказ</button>
 
                 <div class="modal-form">

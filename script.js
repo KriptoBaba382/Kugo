@@ -198,12 +198,12 @@ function sendEmail() {
     body: formData
   })
 }
-mailButton.addEventListener ('click', () => {
-  sendEmail()
-    .then(() => {
-      modalDialog.classList.remove ('hiden')
-    })
-})
+// mailButton.addEventListener ('click', () => {
+//   sendEmail()
+//     .then(() => {
+//       modalDialog.classList.remove ('hiden')
+//     })
+// })
 
 
 
@@ -219,8 +219,13 @@ validation
       errorMessage: 'Укажите телефон',
     },
   ])
+  .addField('[name=usermail]', [
+    {
+      rule: 'required',
+      errorMessage: 'Укажите почту',
+    },
+  ])
   .onSuccess((event) => {    
-    document.querySelector('#formErrorText').style.display = 'none'
     const thisForm = event.target;
     sendFormToServer(thisForm)
     .then((response) => {

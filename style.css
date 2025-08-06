@@ -142,10 +142,7 @@ color: #6F73EE;
 .title {
   font-family: "Jost SM";
 }
-form {
-  display: flex;
-  align-items: center;
-}
+
 
 .search-wrapper {
   border: 2px solid rgb(111, 115, 238);
@@ -547,13 +544,18 @@ span {
   .form-note-eror.white {
     color: #fff;
   }
-
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 input {
   width: 100%;
   height: 100%;
   border: none;
   font-size: 16px;
   padding-left: 25px;
+
 }
 .chek-box {
   width: 16px;
@@ -582,6 +584,7 @@ input {
   width: 410px;
   height: 53px;
   color: #fff;
+  margin-right: 165px;
 }
 .title-test-form {
   font-size: 18px;
